@@ -33,19 +33,16 @@ const  addEmployee = () => {inquirer.prompt([
     },
     {
         type: "input",
-        name: "officeID",
-        message:'What is your office Id number?',
-        when: function( answers ) {
-          return answers.title === "Manager";
-     }
+        name: "id",
+        message:'What is your ID number?',
     },
     {
         type: "input",
-        name: "employeeID",
-        message:'What is your employee Id?',
+        name: "officeNumber",
+        message:'What is your office number?',
         when: function( answers ) {
-          return answers.title === "Engineer" || answers.title === "Intern";
-        },
+          return answers.title === "Manager";
+     }
     },
     {
         type: "input",
@@ -121,7 +118,7 @@ const renderTeam = () => {
     fs.writeFile(outputPath, team, (err) => 
     err ? console.log(err) : console.log("Success!"))
  }
-
+ addEmployee();
 // HINT: each employee type (manager, engineer, or intern) has slightly different
 // information; write your code to ask different questions via inquirer depending on
 // employee type.
