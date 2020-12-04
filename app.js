@@ -67,9 +67,11 @@ inquirer.prompt([
     },
     
  ])
-//  .then((data) => {
-    
-// }
+ .then((data) => {
+   console.log(data); 
+   
+});
+
 
 
 // After the user has input all employees desired, call the `render` function (required
@@ -90,4 +92,4 @@ inquirer.prompt([
 // and Intern classes should all extend from a class named Employee; see the directions
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
-// for the provided `render` function to work! ```
+// for the provided `render` function to work! 
