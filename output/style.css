@@ -1,0 +1,20 @@
+#myTeam-jumbotron{
+background-color: #621940;
+}
+
+h1{
+    color: white;
+}
+
+.manager{
+    background-color: #621940;
+    color: white
+}
+.engineer{
+    background-color: #843b62;
+    color: white
+}
+.intern{
+    background-color: #f6737d;
+    color:white;
+}
